@@ -1,0 +1,15 @@
+body {
+    margin: 0 auto;
+}
+
+h1 {
+    background-color: #4aaaa5;
+}
+
+nav{
+    float: right;
+}
+
+section {
+    width: 960px;
+}
