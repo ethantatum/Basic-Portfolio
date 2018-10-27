@@ -2,8 +2,13 @@ body {
     margin: 0 auto;
 }
 
+header {
+    width: 960;
+    margin: 0 auto;
+}
 h1 {
     background-color: #4aaaa5;
+    float: left;
 }
 
 nav{
@@ -12,4 +17,10 @@ nav{
 
 section {
     width: 960px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
