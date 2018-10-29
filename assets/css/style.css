@@ -1,4 +1,5 @@
 body {
+    background-image: url("../images/dust_scratches/dust_scratches.png");
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,19 +37,15 @@ nav{
 
 section {
     clear: both;
+    padding: 10px 0px 60px 0px;
     margin: 0;
-    
-    /* background-image: url("dust_scratches.png"); */
+    /* background-image: url("dust_scratches.jpg"); */
 }
 
 footer {
     background-color: #666666;
 }
 
-.background {
-    background-image: url("./dust_scratches.jpg");
-    background-repeat: repeat-x;
-}
 
 .aboutMe {
     background-color: blue;
