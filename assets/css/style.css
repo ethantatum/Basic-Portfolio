@@ -31,6 +31,7 @@ nav{
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     float: right;
     text-align: right;
+    word-spacing: 14px;
     color: #777777;
     padding: 50px 20px 35px 0px;
     margin: -10px -15px 0px 0px;
@@ -86,6 +87,29 @@ footer {
     padding: 35px 0px 5px 0px;
 }
 
+a:link {
+    color: #777777; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: #777777;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4aaaa5;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #ffffff;
+    background-color: #4aaaa5;
+    text-decoration: underline;
+}
 
 /* .clearfix::after {
     content: "";
