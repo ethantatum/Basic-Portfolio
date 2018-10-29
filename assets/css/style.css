@@ -63,14 +63,16 @@ h2 {
 
 img {
     float: left;
-    margin-right: 20px;
+    margin-right: 25px;
+    margin-bottom: 5px;
     padding-top: 10px;
 }
 
 .content {
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
-    line-height: 2;
+    line-height: 2.2;
+    word-spacing: 1.8px;
     padding: 0px 25px 10px 0px;
 }
 
