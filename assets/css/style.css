@@ -164,22 +164,29 @@ input {
 
 .firstCol {
     float: left;
+    margin-right: 15px;
 }
 
 .secondCol {
     float: left;
+    margin-left: 15px;
 }
 
 .picPort {
-    width: 200px;
-    height: 100px;
+    width: 250px;
+    height: 150px;  
 }
 
 .picText {
-    width: 200px;
+    width: 250px;
     background-color: #4aaaa5;
     color: #ffffff;
-    /* padding: 5px 20px; */
+    text-align: center;
+    font-size: 13px;
+    padding: 2px 0px;
+    position: relative;
+    bottom: 60;
+    /* z-index: 2; */
 }
 
 /* ////////// clearfix example CSS ////////// */
