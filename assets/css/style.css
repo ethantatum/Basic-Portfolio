@@ -42,7 +42,7 @@ nav{
 section {
     clear: both;
     padding: 10px 0px 60px 0px;
-    margin: 0;
+    margin: 0 auto;
     flex: 1;
 }
 
@@ -59,33 +59,6 @@ section {
     padding: 0px 30px 0px 30px;
 }
 
-input {
-   width: 900px; 
-}
-
-#name, #email {
-    opacity: 0.55;
-    padding: 5px;
-}
-
-#message {
-    opacity: 0.85;
-    padding: 5px;
-    width: 900px;
-    height: 150px;
-    margin-bottom: 15px;
-    resize: vertical;
-    overflow: hidden;
-}
-
-#submit {
-    border: 0;
-    padding: 10px 30px 10px 30px;
-    width: auto;
-    background-color: #4aaaa5;
-    color: #ffffff;
-    cursor: pointer;
-}
 
 h2 {
     color: #4aaaa5;
@@ -95,7 +68,7 @@ h2 {
     border-bottom: 2px solid #dddddd;
 }
 
-img {
+.aboutPic {
     float: left;
     margin-right: 25px;
     margin-bottom: 5px;
@@ -144,6 +117,72 @@ a:active {
     background-color: #4aaaa5;
     text-decoration: underline;
 }
+
+/* ////////// Contact.html specific CSS ////////// */
+input {
+   width: 900px; 
+}
+
+#name, #email {
+    opacity: 0.55;
+    padding: 5px;
+}
+
+#message {
+    opacity: 0.85;
+    padding: 5px;
+    width: 900px;
+    height: 150px;
+    margin-bottom: 15px;
+    resize: vertical;
+    overflow: hidden;
+}
+
+#submit {
+    border: 0;
+    padding: 10px 30px 10px 30px;
+    width: auto;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* ////////// Portfolio.html specific CSS ////////// */
+.portfolio {
+    background-color: #ffffff;
+    border: 2px solid #dddddd;
+    width: 960px;
+    float: left;
+}
+
+.contentImages {
+    float: left;
+    font-family: Georgia, Times,'Times New Roman', serif;
+    padding: 0px 25px 10px 0px;
+}
+
+
+.firstCol {
+    float: left;
+}
+
+.secondCol {
+    float: left;
+}
+
+.picPort {
+    width: 200px;
+    height: 100px;
+}
+
+.picText {
+    width: 200px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    /* padding: 5px 20px; */
+}
+
+/* ////////// clearfix example CSS ////////// */
 
 /* .clearfix::after {
     content: "";
