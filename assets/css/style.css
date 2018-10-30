@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 header {
@@ -10,7 +13,6 @@ header {
     font-family: Georgia, Times,'Times New Roman', serif;
     border-bottom: 2px solid #cccccc;
     width: 100%;
-    float: left;
 }
 
 .centerHeader {
@@ -41,6 +43,7 @@ section {
     clear: both;
     padding: 10px 0px 60px 0px;
     margin: 0;
+    flex: 1;
 }
 
 .aboutMe {
@@ -48,6 +51,7 @@ section {
     border: 2px solid #dddddd;
     width: 960px;
     margin: 0 auto;
+    
 }
 
 .centerAbout {
@@ -85,6 +89,7 @@ footer {
     text-align: center;
     border-top: 7px solid #4aaaa5;
     padding: 35px 0px 5px 0px;
+    /* flex-shrink: 0; */
 }
 
 a:link {
