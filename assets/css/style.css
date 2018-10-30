@@ -1,8 +1,10 @@
+/* ///// Universal CSS ///// */
 body {
     background-image: url("../../dust_scratches.jpg");
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* ///// These 3 lines are necessary for a FlexBox sticky footer (always put in body) ///// */
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -15,12 +17,14 @@ header {
     width: 100%;
 }
 
+/* ///// Creates a container for centered header elements ///// */
 .centerHeader {
     width: 960px;
     height: 100px;
     margin: 0 auto;
     padding: 1px;
 }
+
 h1 {
     background-color: #4aaaa5;
     color: #ffffff;
@@ -39,61 +43,7 @@ nav{
     margin: -10px -15px 0px 0px;
 } 
 
-section {
-    clear: both;
-    padding: 10px 0px 60px 0px;
-    margin: 0 auto;
-    flex: 1;
-}
-
-
-.aboutMe {
-    background-color: #ffffff;
-    border: 2px solid #dddddd;
-    width: 960px;
-    margin: 0 auto;
-    
-}
-
-.centerAbout {
-    padding: 0px 30px 0px 30px;
-}
-
-
-h2 {
-    color: #4aaaa5;
-    font-size: 34px;
-    padding-bottom: 15px;
-    width: 100%;
-    border-bottom: 2px solid #dddddd;
-}
-
-.aboutPic {
-    float: left;
-    margin-right: 25px;
-    margin-bottom: 5px;
-    padding-top: 10px;
-}
-
-.content {
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777777;
-    line-height: 2.2;
-    word-spacing: 1.8px;
-    padding: 0px 25px 10px 0px;
-}
-
-footer {
-    background-color: #666666;
-    color: #cccccc;
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 12px;
-    text-align: center;
-    border-top: 7px solid #4aaaa5;
-    padding: 35px 0px 5px 0px;
-    /* flex-shrink: 0; */
-}
-
+/* ///// Specifies styling of nav links in various states of activity ///// */
 a:link {
     color: #777777; 
     background-color: transparent; 
@@ -116,6 +66,63 @@ a:active {
     color: #ffffff;
     background-color: #4aaaa5;
     text-decoration: underline;
+}
+
+/* ///// Covers entire width of main content area ///// */
+section {
+    clear: both;
+    padding: 10px 0px 60px 0px;
+    margin: 0 auto;
+    /* Next line completes FlexBox sticky footer (should go in main content area) */
+    flex: 1;
+}
+
+/* ///// Creates centered container for main content ///// */
+.aboutMe {
+    background-color: #ffffff;
+    border: 2px solid #dddddd;
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* ///// Creates centered container for left justification ///// */
+.centerAbout {
+    padding: 0px 30px 0px 30px;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-size: 34px;
+    padding-bottom: 15px;
+    width: 100%;
+    border-bottom: 2px solid #dddddd;
+}
+
+footer {
+    background-color: #666666;
+    color: #cccccc;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    border-top: 7px solid #4aaaa5;
+    padding: 35px 0px 5px 0px;
+}
+
+/* ///// Index.html and Contact.html specific CSS */
+.content {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    line-height: 2.2;
+    word-spacing: 1.8px;
+    padding: 0px 25px 10px 0px;
+}
+
+/* ///// Index.html specific CSS ///// */
+.aboutPic {
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    padding-top: 10px;
 }
 
 /* ////////// Contact.html specific CSS ////////// */
@@ -147,6 +154,12 @@ input {
     cursor: pointer;
 }
 
+/* ///// Creates specific styling for submit button when someone hovers over it ///// */
+#submit:hover {
+        background-color: #777777;
+        color: #ffffff;
+}
+
 /* ////////// Portfolio.html specific CSS ////////// */
 .portfolio {
     background-color: #ffffff;
@@ -160,7 +173,6 @@ input {
     font-family: Georgia, Times,'Times New Roman', serif;
     padding: 0px 25px 10px 0px;
 }
-
 
 .firstCol {
     float: left;
@@ -186,13 +198,28 @@ input {
     padding: 2px 0px;
     position: relative;
     bottom: 60;
-    /* z-index: 2; */
 }
 
-/* ////////// clearfix example CSS ////////// */
+.contentImages a:link {
+    color: #ffffff; 
+    background-color: transparent; 
+    text-decoration: none;
+}
 
-/* .clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-} */
+.contentImages a:visited {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.contentImages a:hover {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.contentImages a:active {
+    color: #777777;
+    background-color: #4aaaa5;
+    text-decoration: underline;
+}
