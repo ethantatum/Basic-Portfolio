@@ -46,6 +46,7 @@ section {
     flex: 1;
 }
 
+
 .aboutMe {
     background-color: #ffffff;
     border: 2px solid #dddddd;
@@ -56,6 +57,26 @@ section {
 
 .centerAbout {
     padding: 0px 30px 0px 30px;
+}
+
+input {
+   width: 900px; 
+}
+
+#message {
+    width: 900px;
+    height: 150px;
+    margin-bottom: 15px;
+    resize: vertical;
+    overflow: hidden;
+}
+
+#submit {
+    border: 0;
+    padding: 10px 30px 10px 30px;
+    width: auto;
+    background-color: #4aaaa5;
+    color: #ffffff;
 }
 
 h2 {
