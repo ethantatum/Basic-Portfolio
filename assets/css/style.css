@@ -192,13 +192,20 @@ input {
 
 .picPort {
     width: 250px;
-    height: 150px;  
+    height: 150px; 
 }
 
 .picPort:hover {
     outline: 4px solid #777777;
     outline-offset: 4px;
 }
+
+/* .picBox:hover {
+    position: relative;
+    bottom: 60;
+    outline: 4px solid #777777;
+    outline-offset: 4px;
+} */
 
 .picText {
     width: 250px;
