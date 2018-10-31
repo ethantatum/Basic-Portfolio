@@ -190,6 +190,7 @@ input {
     margin-left: 15px;
 }
 
+/* ///// Creates container for image and text so correct hover outline can be applied ///// */
 .picBox {
     width: 250px;
     height: 150px;
@@ -201,11 +202,7 @@ input {
     height: 150px; 
 }
 
-/* .picPort:hover {
-    outline: 4px solid #777777;
-    outline-offset: 4px;
-} */
-
+/* ///// Creates outline when user hovers over image ///// */
 .picBox:hover {
     outline: 4px solid #777777;
     outline-offset: 4px;
@@ -244,5 +241,6 @@ input {
 .contentImages a:active {
     color: #777777;
     background-color: #4aaaa5;
-    text-decoration: underline;
+    text-decoration: none;
+    opacity: 0.75;
 }
