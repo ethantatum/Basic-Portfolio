@@ -189,6 +189,11 @@ input {
     height: 150px;  
 }
 
+.picPort:hover {
+    outline: 4px solid #777777;
+    outline-offset: 4px;
+}
+
 .picText {
     width: 250px;
     background-color: #4aaaa5;
