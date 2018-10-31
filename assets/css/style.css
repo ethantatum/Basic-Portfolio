@@ -238,7 +238,7 @@ input {
 .contentImages a:hover {
     color: #ffffff;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .contentImages a:active {
