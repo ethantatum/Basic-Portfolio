@@ -160,10 +160,31 @@ input {
     cursor: pointer;
 }
 
+button {
+    border: 0;
+    padding: 0px;
+}
+
+#samplePseudo {
+    display: none;
+}
+
 /* ///// Creates specific styling for submit button when someone hovers over it ///// */
 #submit:hover {
         background-color: #777777;
         color: #ffffff;
+}
+
+button:active #samplePseudo {
+    display: block;
+    position: absolute;
+    bottom: 90;
+    left: 420;
+    z-index: 999;
+    width: 120px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 10px 30px 10px 30px;
 }
 
 /* ////////// Portfolio.html specific CSS ////////// */
